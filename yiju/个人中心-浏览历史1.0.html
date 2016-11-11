@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心1.0</title>
+    <link rel="stylesheet" href="css/clear.css ">
+    <link rel="stylesheet" href="css/footer.css ">
+    <style type="text/css">
+        .banner{
+            background-color: #75A749;
+            width: 100%;
+            height: 56px;
+        }
+        .wrap{
+            width: 1150px;
+            margin: 0 auto;
+        }
+        .logo{
+            background: url("img/logo2.png") no-repeat ;
+            display: inline-block;
+            width: 144px;
+            height: 37px;
+            margin-top: 10px;
+        }
+        .search-box{
+            width: 643px;
+            /*height: 36px;*/
+            height: 36px;
+            background-color: #fff;
+            margin:-42px auto 0;
+            border-radius: 5px;
+            line-height:36px;
+        }
+        .address{
+            font-size: 16px;
+            color: #333333;
+            margin-left: 22px;
+            font-family: 微软雅黑;
+        }
+        .addresses{
+            width: 0;
+            height: 0;
+            border-top:5px solid #999999;
+            border-left:4px solid rgba(0,0,0,0);
+            border-right:4px solid rgba(0,0,0,0);
+            vertical-align: -10px;
+            margin-left: 4px;
+        }
+        .xian{
+            font-size: 28px;
+            color: #CCCCCC;
+            vertical-align: -4px;
+            margin-left: 8px;
+            margin-top: -50px;
+            display: inline-block;
+        }
+        .search-content{
+            height: 32px;
+            width: 420px;
+            border:none;
+            font-size: 16px;
+            outline: none;
+            margin-top: -32px;
+            display: inline-block;
+        }
+        .btn{
+            width: 123px;
+            height: 36px;
+            background-color: #5C8339;
+            float: right;
+            line-height: 36px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .button{
+            width: 23px;
+            height: 23px;
+            display: inline-block;
+            background: url("img/spirte.png") no-repeat 0 0;
+            margin-top: 7px;
+            margin-left: 17px;
+        }
+        .search-font{
+            font-size: 18px;
+            color: #fff;
+            vertical-align: 5px;
+        }
+        .set{
+            float: right;
+            margin-top: -28px;
+        }
+        .set li{
+            float: left;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .set-font{
+            margin-left: 12px;
+        }
+        .main{
+            height: 1370px;
+        }
+        .main-l{
+            width: 190px;
+            height: 320px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .header{
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            background-color: #CCCCCC;
+            margin: 20px 55px 0;
+        }
+        .header-l{
+            height: 64px;
+            width: 56px;
+            display: inline-block;
+            background: url("img/spirte.png") no-repeat 0 -36px;
+            margin-left: 12px;
+            margin-top: 16px;
+        }
+        .header-font{
+            font-size: 14px;
+            color: #333333;
+            margin-left: 12px;
+        }
+        .header-font1{
+            width: 190px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: -55px;
+            font-size: 14px;
+            color: #333333;
+            text-align: center;
+        }
+        .header-font2{
+            /*background-color: #75A749;*/
+            margin-top: 16px;
+            /*color: #fff;*/
+        }
+        .header-color{
+            background-color: #75A749;
+            color: #fff;
+        }
+        .main-r{
+            width: 948px;
+            height: 1305px;
+            float: right;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            margin-top: -320px;
+        }
+        .wrap-s{
+            width: 906px;
+            margin: 0 auto;
+        }
+        .list1{
+            font-size: 16px;
+            color: #333333;
+            font-weight: 600;
+            font-family: 微软雅黑;
+            margin-top: 20px;
+        }
+
+        .list3{
+            height: 220px;
+            /*line-height: 220px;*/
+            border-bottom: 1px solid #E0E0E0;
+            position: relative;
+        }
+        .list3-img{
+            /*padding-top: 30px;*/
+            position: absolute;
+            left:0;
+            top:30px;
+
+        }
+        .list3-text{
+            margin-left: 242px;
+            padding-top: 30px;
+            font-size: 14px;
+        }
+        .people{
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            background: url("img/spirte.png") no-repeat 0 -114px;
+            vertical-align: -4px;
+        }
+        .cheng{
+            background: url("img/spirte.png") no-repeat -35px -114px;
+            vertical-align: -4px;
+        }
+        .msg{
+            font-size: 18px;
+            font-weight: 600;
+            color:#333333;
+            font-family: 微软雅黑;
+        }
+
+        .msg1{
+            margin-top: 18px;
+        }
+        .map{
+            width: 14px;
+            height: 18px;
+            display: inline-block;
+            margin-top: 10px;
+            background: url("img/spirte.png") no-repeat -67px -114px;
+            vertical-align: -3px;
+            margin-right: 4px;
+        }
+        .msg2{
+            width: 64px;
+            height: 22px;
+            border: 1px solid #FFA422;
+            border-radius: 2px;
+            color: #FFA422;
+            text-align: center;
+            display: inline-block;
+            margin-top: 14px;
+        }
+        .msg3{
+            border: 1px solid #75A749;
+            color: #75A749;
+        }
+        .msg-del{
+            float: right;
+            width: 64px;
+            height: 22px;
+            line-height: 22px;
+            font-size: 12px;
+            border: 1px solid #CCCCCC;
+            border-radius: 2px;
+            text-align: center;
+            margin-top: -98px;
+        }
+        .del-{
+            font-size: 18px;
+            display: inline-block;
+            vertical-align: -1px;
+        }
+        .money{
+            font-size: 24px;
+            color: #EB5F00;
+            float: right;
+            margin-top: -50px;
+        }
+        .month{
+            font-size: 14px;
+        }
+        .time{
+            float: right;
+        }
+        .style{
+            font-size: 18px;
+            color: #FFA422;
+        }
+        .msg-color{
+            border: 1px solid #88B9B9;
+            color: #88B9B9;
+        }
+        .msg-color2{
+            border: 1px solid #DE958F;
+            color: #DE958F;
+        }
+        .wrap-s ul{
+            width: 330px;
+            margin:40px  auto ;
+        }
+        .wrap-s ul li{
+            float: left;
+          text-align: center;
+        }
+        .page{
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            display: inline-block;
+            border: 1px solid #CCCCCC;
+            margin-left: 8px;
+        }
+        .current{
+            background-color: #F5F5F5;
+        }
+        .page1{
+            width: 42px;
+        }
+        .page2{
+            width: 56px;
+        }
+        .point{
+            margin-left: 9px;
+            vertical-align: -6px;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <div class="wrap">
+        <a href="#" target="_blank" class="logo"></a>
+        <div class="search-box">
+            <span class="address">郑州</span>
+            <a href="#" target="_blank" class="addresses"></a>
+            <i class="xian">|</i>
+            <input type="text" class="search-content" placeholder="请输入小区名称/区域/厅室" value=""/>
+            <div class="btn">
+                <i class="button"></i>
+                <a href="#" class="search-font">搜房源</a>
+            </div>
+        </div>
+        <ul class="set">
+            <li>我的昵称</li>
+            <li class="set-font">注册</li>
+        </ul>
+
+    </div>
+</div>
+<div class="main">
+    <div class="wrap">
+        <div class="main-l">
+            <a href="#" target="_blank" class="header">
+                <i class="header-l"></i>
+                <p class="header-font">我的昵称</p>
+                <p class="header-font1 header-font2">我的收藏</p>
+                <p class="header-font1">我的发布</p>
+                <p class="header-font1 header-color">浏览历史</p>
+                <p class="header-font1">编辑资料</p>
+            </a>
+
+        </div>
+        <div class="main-r">
+            <div class="wrap-s">
+                <p class="list1">浏览历史</p>
+                <div class="list3">
+                    <div class="list3-img">
+                        <a href="#">
+                            <img src="img/picture1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="list3-text">
+                        <h2>
+                            <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                            <i class="people"></i>
+                            <i class="people cheng"></i>
+                        </h2>
+                        <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                        <p class="msg-address">
+                            <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                        </p>
+                        <div class="msg2">精装修</div>
+                        <div class="msg2 msg3">地铁口</div>
+                        <div class="msg-del">
+                            <a href="#" class="del">删除 <span class="del-">×</span></a>
+                        </div>
+                        <div class="money">2800<span class="month">/月</span></div>
+                        <p class="time">今天</p>
+                    </div>
+
+                </div>
+                <div class="list3">
+                    <div class="list3-img">
+                        <a href="#">
+                            <img src="img/picture2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="list3-text">
+                        <h2>
+                            <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                            <span class="style">（个人）</span>
+                        </h2>
+                        <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                        <p class="msg-address">
+                            <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                        </p>
+                        <div class="msg2 msg-color">家电齐全</div>
+                        <div class="msg2 msg3 msg-color2">押一付一</div>
+                        <div class="msg-del">
+                            <a href="#" class="del">删除 <span class="del-">×</span></a>
+                        </div>
+                        <div class="money">2800<span class="month">/月</span></div>
+                        <p class="time">2016.6.20</p>
+                    </div>
+
+                </div>
+                <div class="list3">
+                    <div class="list3-img">
+                        <a href="#">
+                            <img src="img/picture3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="list3-text">
+                        <h2>
+                            <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                            <span class="style">（个人）</span>
+                            <i class="people cheng"></i>
+                        </h2>
+                        <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                        <p class="msg-address">
+                            <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                        </p>
+                        <div class="msg2">精装修</div>
+                        <div class="msg2 msg3 msg-color2">押一付一</div>
+                        <div class="msg2 msg3">地铁口</div>
+                        <div class="msg-del">
+                            <a href="#" class="del">删除 <span class="del-">×</span></a>
+                        </div>
+                        <div class="money">2800<span class="month">/月</span></div>
+                        <p class="time">2016.6.20</p>
+                    </div>
+
+                </div>
+                <div class="list3">
+                    <div class="list3-img">
+                        <a href="#">
+                            <img src="img/picture4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="list3-text">
+                        <h2>
+                            <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                            <i class="people"></i>
+                        </h2>
+                        <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                        <p class="msg-address">
+                            <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                        </p>
+                        <div class="msg2 msg3">地铁口</div>
+                        <div class="msg2 msg-color">家电齐全</div>
+                        <div class="msg-del">
+                            <a href="#" class="del">删除 <span class="del-">×</span></a>
+                        </div>
+                        <div class="money">2800<span class="month">/月</span></div>
+                        <p class="time">2016.6.20</p>
+                    </div>
+
+                </div>
+                <div class="list3">
+                    <div class="list3-img">
+                        <a href="#">
+                            <img src="img/picture5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="list3-text">
+                        <h2>
+                            <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                            <span class="style">（个人）</span>
+                            <i class="people cheng"></i>
+                        </h2>
+                        <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                        <p class="msg-address">
+                            <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                        </p>
+                        <div class="msg-del">
+                            <a href="#" class="del">删除 <span class="del-">×</span></a>
+                        </div>
+                        <div class="money">2800<span class="month">/月</span></div>
+                        <p class="time">2016.6.20</p>
+                    </div>
+
+                </div>
+                <ul>
+                    <li><a href="#" target="_blank" class="page current">1</a></li>
+                    <li><a href="#" target="_blank" class="page">2</a></li>
+                    <li><a href="#" target="_blank" class="page">3</a></li>
+                    <li><a href="#" target="_blank" class="page">4</a></li>
+                    <li><a href="#" target="_blank" class="page">5</a></li>
+                    <li><a href="#" target="_blank" class="point">...</a></li>
+                    <li><a href="#" target="_blank" class="page page1">100</a></li>
+                    <li><a href="#" target="_blank" class="page page2">下一页</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="wrap">
+        <ul class="footer-fl f-clear">
+            <li>友情链接：</li>
+            <li><a href="#" target="_blank" class="footer-font">武汉租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">厨房电器品牌</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房展汇</a></li>
+            <li><a href="#" target="_blank" class="footer-font">36搜房网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">无锡二手车</a></li>
+            <li><a href="#" target="_blank" class="footer-font">合肥房产网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产论坛</a></li>
+            <li><a href="#" target="_blank" class="footer-font">租房问答</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州房价</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">密封胶</a></li>
+        </ul>
+        <ul class="footer-fl1 f-clear">
+            <li><a href="#" target="_blank" class="footer-font ">南山写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">罗湖写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">上海写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">广州写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">北京办公室出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">深圳写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产季</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+        </ul>
+        <p class="xian-"></p>
+        <div class="footer-b">
+            <a href="#" target="_blank" class="footer-b1">北京宜居房产经纪有限公司</a>
+            | 网络经营许可证 京ICP备11024601号-12
+            <p class="footer-bottom">
+                © Copyright© 2010-2016 宜居yiju.com版权所有
+            </p>
+        </div>
+        <div class="second">
+            <a href="#" target="_blank" class="second-picture"></a>
+            <p class="second-font">微信扫一扫 马上租房</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

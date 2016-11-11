@@ -1,0 +1,367 @@
+
+
+
+        /*主体*/
+.banner3 {
+    width: 100%;
+    height: 650px;
+}
+
+.bg {
+    background: url("../img/banner.png") no-repeat center center;
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.logo1 {
+    display: inline-block;
+    height: 37px;
+    width: 100px;
+    background: url("../img/logo.png") no-repeat;
+}
+
+.logo2 {
+    background: url("../img/yiju.png") no-repeat;
+}
+
+.logo1, .set {
+    margin-top: 45px;
+}
+
+.set {
+    float: right;
+}
+
+.set a, .xian {
+    float: left;
+    color: #fff;
+    font-size: 14px;
+}
+
+.set i {
+    margin: 0 6px;
+}
+
+.wrap-son {
+    width: 747px;
+    margin: 0 auto;
+}
+
+.house {
+    margin-top: 105px;
+    margin-left: 50px;
+}
+
+.btn {
+    width: 886px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 55px;
+    margin-left: 132px;
+}
+
+#rent, #host {
+    display: inline-block;
+    color: #EEEEEE;
+    font-size: 16px;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+#rent {
+    margin-left: 70px;
+}
+
+#host {
+    margin-left: 40px;
+}
+
+#white-sangle {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    margin-left: 90px;
+}
+
+.btn a:hover {
+    font-weight: 600;
+}
+
+#search {
+    width: 794px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-left: 47px;
+}
+
+.search1 {
+    height: 50px;
+    display: inline-block;
+}
+
+.font {
+    color: #000;
+    font-size: 16px;
+    margin-left: 22px;
+    display: inline-block;
+}
+
+.black-sangle {
+    width: 0;
+    height: 0;
+    border-top: 5px solid #999999;
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: 3px;
+}
+
+.search-xian {
+    font-size: 28px;
+    display: inline-block;
+    color: #DCDCDC;
+    margin-left: 10px;
+}
+
+.search-content {
+    height: 43px;
+    width: 540px;
+    border: none;
+    font-size: 16px;
+    vertical-align: 2px;
+    outline: none;
+}
+
+.sbtn {
+    background-color: #75A748;
+    float: right;
+    width: 114px;
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.button {
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    background: url("../img/spirte.png") no-repeat 0 0;
+    margin-top: 14px;
+    margin-left: 17px;
+}
+
+.search- {
+    width: 62px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: 5px;
+}
+
+.fl {
+    margin-left: 70px;
+    margin-top: 13px;
+}
+
+.fl li {
+    float: left;
+    font-size: 14px;
+}
+
+.self {
+    margin-right: 11px;
+}
+
+.self1 {
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+
+        #green-sangle{
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid #75A748;
+            border-left:10px solid rgba(0,0,0,0);
+            border-right:10px solid rgba(0,0,0,0);
+            margin-left: 199px;
+            display:none;
+        }
+        #search2{
+            width: 520px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #75A748;
+            border-radius: 5px;
+            margin-left: 183px;
+            display:none;
+        }
+        .search-font{
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+            font-family: 微软雅黑;
+            letter-spacing: 2px;
+        }
+        .city{
+            width: 100px;
+            height: 260px;
+            display: none;
+            background-color: #fff;
+            position: absolute;
+        }
+        .city p{
+            margin-right: 20px;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #000;
+        }
+
+
+    /*广告*/
+.ad{
+    width: 100%;
+    height: 119px;
+    background-color: #EEEEEE;
+}
+.ad-content{
+    padding-top: 32px;
+}
+.ad-content li{
+    float: left;
+}
+.content1{
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+.content2{
+    margin-left: 140px;
+}
+.content3{
+    margin-left: 106px;
+}
+.content4{
+    margin-left: 116px;
+}
+.content1-font{
+    font-size: 14px;
+    margin-top: 23px;
+}
+
+
+
+
+
+         /*推荐*/
+        .more{
+            width: 100%;
+            height: 118px;
+        }
+        .resouse-font{
+            font-size: 30px;
+            color: #333333;
+            text-align: center;
+            line-height: 118px;
+        }
+        .resouse-font1{
+            color: #75A748;
+        }
+        .resouse-font2{
+            float: right;
+            margin-top: -60px;
+        }
+
+
+
+
+
+            /*轮播*/
+        .resouse{
+            width: 100%;
+            height: 410px;
+        }
+        .w-s{
+
+            position: relative;
+            width: 1150px;
+            margin: 0 auto;
+        }
+        .left-sangle{
+            width: 25px;
+            height: 312px;
+            line-height: 312px;
+            font-size: 40px;
+            color: #CCCCCC;
+            display: inline-block;
+            position: absolute;
+            left: -31px;
+            top:0;
+        }
+        .right-sangle{
+            width: 25px;
+            font-size: 40px;
+            color: #CCCCCC;
+            display: inline-block;
+            height: 312px;
+            line-height: 312px;
+            position: absolute;
+            left: 1145px;
+            top:0;
+        }
+        .resouse ul li{
+            width: 274px;
+            height: 320px;
+            float: left;
+            border: 1px solid #EBEBEB;
+            margin-right: 13px;
+        }
+        .resouse-house{
+            width: 253px;
+            height: 209px;
+            margin: 10px;
+        }
+        .resouse-house-font{
+            font-size: 16px;
+            color: #333333;
+            font-weight: 600;
+            font-family: 微软雅黑;
+            margin-top: 4px;
+            margin-left: 14px;
+        }
+        .resouse-house-font1{
+            font-size: 14px;
+            margin-left: 14px;
+            margin-top: 14px;
+        }
+        .resouse-house-font2{
+            font-size: 18px;
+            color: #75A748;
+            margin-left: 36px;
+        }
+        .resouse-house-font3{
+            font-size: 12px;
+        }
+        .lunbo{
+            width: 1150px;
+            height: 330px;
+            overflow: hidden;
+        }
+        .lunbo-s{
+            position: relative;
+        }

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/clear.css ">
+    <link rel="stylesheet" href="css/footer.css ">
+    <style>
+        .banner{
+            width:100%;
+            height: 650px;
+        }
+        .bg{
+            background:url("img/bg.jpg") no-repeat center center;
+            width: 100%;
+            height: 650px;
+            margin: 0 auto;
+        }
+        .wrap{
+            width: 1150px;
+            margin: 0 auto;
+        }
+        .logo1{
+            display: inline-block;
+            height: 37px;
+            width: 100px;
+            background: url("img/logo.png") no-repeat;
+        }
+        .logo2{
+            width: 50px;
+            background: url("img/yiju.png") no-repeat;
+        }
+        .logo1,.set{
+            margin-top: 45px;
+        }
+
+        .set{
+            float:right;
+        }
+        .set a, .xian{
+            float: left;
+            color:#fff;
+            font-size: 14px;
+        }
+        .set i{
+            margin: 0 6px;
+        }
+        .xian2{
+            width: 1px;
+            height: 50px;
+            background-color: #BBBBBB;
+            display: inline-block;
+            vertical-align: -10px;
+        }
+        .welcome{
+            font-size: 23px;
+            color: #555555;
+            font-family: 微软雅黑;
+            margin-left: 16px;
+            vertical-align: 9px;
+            /*display: none;*/
+        }
+        .welcome2{
+            font-size: 23px;
+            color: #555555;
+            font-family: 微软雅黑;
+            margin-left: 16px;
+            vertical-align: 9px;
+            display: none;
+        }
+        .login-box,.register-box{
+            width: 513px;
+            height: 465px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin: 14px auto;
+        }
+        /*.register-box,.login-box{
+            display: none;
+        }*/
+        .wrap-box{
+            width: 372px;
+            margin: 0 auto;
+        }
+        .login-title{
+            line-height: 60px;
+            font-size: 20px;
+            color: #333333;
+            font-weight: 600;
+            font-family: 微软雅黑;
+            text-align: center;
+        }
+        .name{
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        .name1{
+            margin-bottom: 12px;
+        }
+        .name-l{
+            line-height: 34px;
+            width: 96px;
+            text-align: right;
+            display: inline-block;
+        }
+        .star-color{
+            color: #EF8654;
+        }
+        .name-font{
+            font-size: 14px;
+            color: #555555;
+            font-family: 微软雅黑;
+        }
+        .name-r{
+            width: 265px;
+            float: right;
+            border: 1px solid #D0D0D0;
+            height: 38px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+        .r-box{
+            width: 214px;
+            border: 0;
+            margin-left: 4px;
+        }
+        .people{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background: url("img/spirte.png") no-repeat 0 -306px;
+            margin-left: 12px;
+            vertical-align: -5px;
+        }
+        .secret{
+            background: url("img/spirte.png") no-repeat -25px -306px;
+        }
+        .r-box2{
+            width: 106px;
+            height: 34px;
+            line-height: 34px;
+            border: 0;
+        }
+        .r-box22{
+            width: 110px;
+            height: 38px;
+            line-height: 38px;
+            border: 1px solid #D0D0D0;
+            display: inline-block;
+            border-radius: 3px;
+        }
+        .name-r2{
+            border: 0;
+        }
+        .try{
+            width: 100px;
+            height: 36px;
+            line-height: 36px;
+            color: #fff;
+            text-align: center;
+            display: inline-block;
+            background-color: #B0B0B0;
+        }
+        .try-font{
+            line-height: 36px;
+            display: inline-block;
+            color: #646464;
+        }
+        .rule-box{
+            margin-left: 106px;
+            margin-right: 6px;
+            vertical-align: -2px;
+        }
+        .rule-font{
+            color: #87B867;
+        }
+        .rule-r{
+            float: right;
+        }
+        .login1{
+            width: 266px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #70AD46;
+
+            text-align: center;
+            margin-top: 4px;
+            border-radius: 3px;
+            margin-left: 106px;
+        }
+        .login1-font{
+            color: #fff;
+        }
+        .submit{
+            border: 0;
+        }
+        .web{
+            font-size: 14px;
+            color: #999999;
+            line-height: 44px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .port{
+            height: 70px;
+        }
+        .port ul li{
+            float: left;
+        }
+        .circle{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #5EC5F2;
+            margin-left: 50px;
+        }
+        .circle1{
+            background-color: #F69A85;
+            margin-left: 45px;
+        }
+        .circle2{
+            background-color:#7EE885;
+            margin-left: 45px;
+        }
+        .qq{
+            width: 46px;
+            height: 45px;
+            display: block;
+            background: url("img/spirte.png") no-repeat 4px -334px;
+            margin-left: 11px;
+            margin-top: 9px;
+        }
+        .sina{
+            background: url("img/spirte.png") no-repeat -41px -334px;
+        }
+        .wechat{
+            background: url("img/spirte.png") no-repeat -90px -334px;
+        }
+        .mail{
+            background: url("img/spirte.png") no-repeat -55px -306px;
+        }
+        .phone{
+            background: url("img/spirte.png") no-repeat -85px -306px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="banner">
+    <div class="bg">
+        <div class="wrap">
+            <a href="#"  class="logo1"></a>
+            <a href="#"  class="logo1 logo2"></a>
+            <i class="xian2"></i>
+            <span class="welcome">欢迎登录</span>
+            <!--<span class="welcome2">欢迎注册</span>-->
+           <!-- <div class="set">
+                <a href="###" class="set-login">登录</a>
+                <i class="xian">|</i>
+                <a href="###" class="set-register">注册</a>
+            </div>-->
+            <form>
+                <div class="login-box">
+                    <div class="wrap-box">
+                        <h2 class="login-title">用户登录</h2>
+                        <div class="name">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">用户名：</span></span>
+                            </div>
+                            <div class="name-r">
+                                <input type="text" name="lname" value="" class="r-box"/>
+                                <i class="people"></i>
+                            </div>
+
+                        </div>
+                        <div class="name">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">请输入密码：</span></span>
+                            </div>
+                            <div class="name-r">
+                                <input type="password" name="lpassword" value="" class="r-box"/>
+                                <i class="people secret"></i>
+                            </div>
+
+                        </div>
+                        <div class="name">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">输入验证码：</span></span>
+                            </div>
+                            <div class="name-r name-r2">
+                                <div class="r-box22"><input type="text" name="" value="" class="r-box2"/></div>
+                                <i class="try">验证码</i>
+                                <a href="###" class="try-font">换一张</a>
+                            </div>
+
+                        </div>
+                        <div class="rule">
+                            <input type="checkbox" name="" checked="checked" value="" class="rule-box xieyi"/>
+                            阅读并同意<span class="rule-font">服务协议</span>
+                            <div class="rule-r">
+                                <a href="http://localhost:63342/yiju/register.html###" class="rule-font">注册</a>
+                                <i>|</i>
+                                <a href="###">找回密码</a>
+                            </div>
+
+                        </div>
+                        <!--<p class="login1"><a href="http://192.168.0.118/yiju/first.html" class="login1-font">登录</a></p>-->
+                        <input class="submit login1 login1-font" type="button" value="登录">
+                        <p class="web">----------------使用合作网站账号登录-----------------</p>
+                        <div class="port">
+                            <ul>
+                                <li class="circle"><a href="###"><i class="qq"></i></a></li>
+                                <li class="circle circle1"><a href="###"><i class="qq sina"></i></a></li>
+                                <li class="circle circle2"><a href="###"><i class="qq wechat"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </form>
+           <!-- <form>
+                <div class="register-box">
+                    <div class="wrap-box">
+                        <h2 class="login-title">新用户登注册</h2>
+                        <div class="name name1">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">用户名：</span></span>
+                            </div>
+                            <div class="name-r">
+                                <input type="text" name="lname" value="" class="r-box"/>
+                                <i class="people"></i>
+                            </div>
+
+                        </div>
+                        <div class="name name1">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">请输入密码：</span></span>
+                            </div>
+                            <div class="name-r">
+                                <input type="password" name="lpassword" value="" class="r-box"/>
+                                <i class="people secret"></i>
+                            </div>
+
+                        </div>
+                        <div class="name name1">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">请确认密码：</span></span>
+                            </div>
+                            <div class="name-r">
+                                <input type="password" name="" value="" class="r-box r2"/>
+                                <i class="people secret"></i>
+                            </div>
+
+                        </div>
+                        <div class="name name1">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">邮箱：</span></span>
+                            </div>
+                            <div class="name-r">
+                                <input type="text" name="lemail" value="" class="r-box"/>
+                                <i class="people mail"></i>
+                            </div>
+
+                        </div>
+                        <div class="name name1">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">手机号：</span></span>
+                            </div>
+                            <div class="name-r">
+                                <input type="text" name="lphone" value="" class="r-box"/>
+                                <i class="people phone"></i>
+                            </div>
+
+                        </div>
+                        <div class="name name1">
+                            <div class="name-l">
+                             <span class="star-color">*
+                        <span class="name-font">输入验证码：</span></span>
+                            </div>
+                            <div class="name-r name-r2">
+                                <div class="r-box22"><input type="text" name="" value="" class="r-box2"/></div>
+                                <i class="try">验证码</i>
+                                <a href="###" class="try-font">换一张</a>
+                            </div>
+
+                        </div>
+                        <div class="rule">
+                            <input type="checkbox" name="" value="" class="rule-box xieyi"/>
+                            阅读并同意<span class="rule-font">服务协议</span>
+                            <div class="rule-r">
+                                <a href="###" class="rule-font rule-font1">登录</a>
+                                <i>|</i>
+                                <a href="###">找回密码</a>
+                            </div>
+
+                        </div>
+                        <input class="submit login1 login1-font" type="button" value="注册">
+                        &lt;!&ndash;<p class="login1"><a href="###" class="login1-font">注册</a></p>&ndash;&gt;
+
+                    </div>
+
+
+                </div>
+            </form>-->
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="wrap">
+        <ul class="footer-fl f-clear">
+            <li>友情链接：</li>
+            <li><a href="#" target="_blank" class="footer-font">武汉租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">厨房电器品牌</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房展汇</a></li>
+            <li><a href="#" target="_blank" class="footer-font">36搜房网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">无锡二手车</a></li>
+            <li><a href="#" target="_blank" class="footer-font">合肥房产网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产论坛</a></li>
+            <li><a href="#" target="_blank" class="footer-font">租房问答</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州房价</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">密封胶</a></li>
+          </ul>
+        <ul class="footer-fl1 f-clear">
+            <li><a href="#" target="_blank" class="footer-font ">南山写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">罗湖写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">上海写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">广州写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">北京办公室出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">深圳写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产季</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+        </ul>
+        <p class="xian-"></p>
+        <div class="footer-b">
+            <a href="#" target="_blank" class="footer-b1">北京宜居房产经纪有限公司</a>
+            | 网络经营许可证 京ICP备11024601号-12
+            <p class="footer-bottom">
+            © Copyright© 2010-2016 宜居yiju.com版权所有
+            </p>
+        </div>
+        <div class="second">
+            <a href="#" target="_blank" class="second-picture"></a>
+            <p class="second-font">微信扫一扫 马上租房</p>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

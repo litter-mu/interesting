@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设置昵称</title>
+    <link rel="stylesheet" href="css/clear.css ">
+    <link rel="stylesheet" href="css/footer.css ">
+    <style type="text/css">
+        .banner{
+            background-color: #75A749;
+            width: 100%;
+            height: 56px;
+        }
+        .wrap{
+            width: 1150px;
+            margin: 0 auto;
+        }
+        .logo{
+            background: url("img/logo2.png") no-repeat ;
+            display: inline-block;
+            width: 144px;
+            height: 37px;
+            margin-top: 10px;
+        }
+        .search-box{
+            width: 643px;
+            /*height: 36px;*/
+            height: 36px;
+            background-color: #fff;
+            margin:-42px auto 0;
+            border-radius: 5px;
+            line-height:36px;
+        }
+        .address{
+            font-size: 16px;
+            color: #333333;
+            margin-left: 22px;
+            font-family: 微软雅黑;
+        }
+        .addresses{
+            width: 0;
+            height: 0;
+            border-top:5px solid #999999;
+            border-left:4px solid rgba(0,0,0,0);
+            border-right:4px solid rgba(0,0,0,0);
+            vertical-align: -10px;
+            margin-left: 4px;
+        }
+        .xian{
+            font-size: 28px;
+            color: #CCCCCC;
+            vertical-align: -4px;
+            margin-left: 8px;
+            margin-top: -50px;
+            display: inline-block;
+        }
+        .search-content{
+            height: 32px;
+            width: 420px;
+            border:none;
+            font-size: 16px;
+            outline: none;
+            margin-top: -32px;
+            display: inline-block;
+        }
+        .btn{
+            width: 123px;
+            height: 36px;
+            background-color: #5C8339;
+            float: right;
+            line-height: 36px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .button{
+            width: 23px;
+            height: 23px;
+            display: inline-block;
+            background: url("img/spirte.png") no-repeat 0 0;
+            margin-top: 7px;
+            margin-left: 17px;
+        }
+        .search-font{
+            font-size: 18px;
+            color: #fff;
+            vertical-align: 5px;
+        }
+        .set{
+            float: right;
+            margin-top: -28px;
+        }
+        .set li{
+            float: left;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .set-font{
+            margin-left: 12px;
+        }
+        .main{
+            height: 505px;
+        }
+        .main-l{
+            width: 190px;
+            height: 320px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .header{
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            background-color: #CCCCCC;
+            margin: 20px 55px 0;
+        }
+        .header-l{
+            height: 64px;
+            width: 56px;
+            display: inline-block;
+            background: url("img/spirte.png") no-repeat 0 -36px;
+            margin-left: 12px;
+            margin-top: 16px;
+        }
+        .header-font{
+            font-size: 14px;
+            color: #333333;
+            margin-left: 12px;
+        }
+        .header-font1{
+            width: 190px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: -55px;
+            font-size: 14px;
+            color: #333333;
+            text-align: center;
+        }
+        .header-font2{
+            margin-top: 16px;
+        }
+        .header-color{
+            background-color: #75A749;
+            color: #fff;
+        }
+
+        .main-r{
+            width: 948px;
+            height: 445px;
+            float: right;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            margin-top: -322px;
+        }
+        .wrap-s{
+            width: 906px;
+            margin: 0 auto;
+        }
+        .list1{
+            font-size: 16px;
+            color: #333333;
+            font-weight: 600;
+            font-family: 微软雅黑;
+            margin-top: 20px;
+        }
+        .list2{
+            height: 40px;
+            background-color: #EEEEEE;
+            margin-top: 4px;
+            color: #666666;
+            /*display: inline-block;*/
+        }
+        .list2-font{
+            width: 74px;
+            height: 40px;
+            display: inline-block;
+            //background-color: #CCCCCC;
+            line-height: 40px;
+            text-align: center;
+        }
+        .list2-font1{
+            width: 74px;
+            line-height: 40px;
+            display: inline-block;
+            text-indent:18px;
+            background-color: #CCCCCC;
+        }
+
+        .list2-font2{
+            width: 74px;
+            line-height: 40px;
+            display: inline-block;
+            text-indent:14px;
+        }
+
+
+
+         /*设置昵称*/
+        .list3{
+            height: 56px;
+            line-height: 56px;
+            font-size: 14px;
+            margin-top: 24px;
+        }
+        .list3-name{
+            width: 224px;
+            height: 33px;
+            border-radius: 3px;
+            border: 1px solid #CCCCCC;
+        }
+        /*.list3{
+            width: 105px;
+            height: 35px;
+            line-height: 35px;
+            background-color: #75A749;
+            border-radius: 3px;
+            text-align: center;
+            margin-top: 30px;
+        }*/
+        .picture{
+            font-size: 14px;
+            color: #fff;
+        }
+        .list4{
+            width: 180px;
+            height: 180px;
+            /*display:block;*/
+            background-color: #CCCCCC;
+            border-radius: 5px;
+            margin-top: 10px;
+            position: relative;
+        }
+        .list4-picture{
+            width: 132px;
+            height: 151px;
+            display: block;
+            background: url("img/spirte.png") no-repeat 0 -154px;
+            position: absolute;
+            left: 24px;
+            top: 30px;
+        }
+        .wrap-s .btn1{
+            width: 122px;
+            height: 40px;
+            background-color: #75A749;
+            border-radius: 3px;
+            border: none;
+            font-size: 16px;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .btn2{
+            width: 122px;
+            height: 40px;
+            border: none;
+            font-size: 16px;
+            color: #666666;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="banner">
+    <div class="wrap">
+        <a href="#" target="_blank" class="logo"></a>
+        <div class="search-box">
+            <span class="address">郑州</span>
+            <a href="#" target="_blank" class="addresses"></a>
+            <i class="xian">|</i>
+            <input type="text" class="search-content" placeholder="请输入小区名称/区域/厅室" value=""/>
+            <div class="btn">
+                <i class="button"></i>
+                <a href="#" class="search-font">搜房源</a>
+            </div>
+        </div>
+        <ul class="set">
+            <li>我的昵称</li>
+            <li class="set-font">注册</li>
+        </ul>
+
+    </div>
+</div>
+<div class="main">
+    <div class="wrap">
+        <div class="main-l">
+            <a href="#" target="_blank" class="header">
+                <i class="header-l"></i>
+                <p class="header-font">我的昵称</p>
+                <p class="header-font1 header-font2">我的收藏</p>
+                <p class="header-font1">我的发布</p>
+                <p class="header-font1">浏览历史</p>
+                <p class="header-font1 header-color">编辑资料</p>
+            </a>
+
+        </div>
+        <div class="main-r">
+            <div class="wrap-s">
+                <p class="list1">编辑资料</p>
+                <div class="list2">
+                    <a href="#" target="_blank" class="list2-font">上传头像</a>
+                    <a href="#" target="_blank" class="list2-font1">修改昵称</a>
+                    <a href="#" target="_blank" class="list2-font2">修改密码</a>
+                </div>
+
+                <div class="list34">
+                    设置昵称：<input type="text" class="list3-name"/>
+                </div>
+
+                <input type="submit" value="保存" class="btn1"/>
+                <input type="reset" value="取消" class="btn2"/>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="wrap">
+        <ul class="footer-fl f-clear">
+            <li>友情链接：</li>
+            <li><a href="#" target="_blank" class="footer-font">武汉租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">厨房电器品牌</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房展汇</a></li>
+            <li><a href="#" target="_blank" class="footer-font">36搜房网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">无锡二手车</a></li>
+            <li><a href="#" target="_blank" class="footer-font">合肥房产网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产论坛</a></li>
+            <li><a href="#" target="_blank" class="footer-font">租房问答</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州房价</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">密封胶</a></li>
+        </ul>
+        <ul class="footer-fl1 f-clear">
+            <li><a href="#" target="_blank" class="footer-font ">南山写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">罗湖写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">上海写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">广州写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">北京办公室出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">深圳写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产季</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+        </ul>
+        <p class="xian-"></p>
+        <div class="footer-b">
+            <a href="#" target="_blank" class="footer-b1">北京宜居房产经纪有限公司</a>
+            | 网络经营许可证 京ICP备11024601号-12
+            <p class="footer-bottom">
+                © Copyright© 2010-2016 宜居yiju.com版权所有
+            </p>
+        </div>
+        <div class="second">
+            <a href="#" target="_blank" class="second-picture"></a>
+            <p class="second-font">微信扫一扫 马上租房</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

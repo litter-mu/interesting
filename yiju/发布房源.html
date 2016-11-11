@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>易居-发布房源1.0</title>
+    <link rel="stylesheet" href="css/clear.css ">
+    <link rel="stylesheet" href="css/footer.css ">
+    <link rel="stylesheet" href="css/banner2.css ">
+    <link rel="stylesheet" href="css/发布房源.css ">
+</head>
+<body>
+<div class="banner">
+    <div class="wrap">
+        <a href="#" target="_blank" class="logo"></a>
+        <div class="search-box">
+            <span class="address">郑州</span>
+            <a href="#" target="_blank" class="addresses"></a>
+            <i class="xian">|</i>
+            <input type="text" class="search-content" placeholder="请输入小区名称/区域/厅室" value=""/>
+            <div class="btn">
+                <i class="button"></i>
+                <a href="#" class="search-font">搜房源</a>
+            </div>
+        </div>
+        <ul class="set">
+            <li><a href="http://192.168.0.118/login.html" class="lala">我的昵称</a></li>
+            <li class="set-font">注册</li>
+        </ul>
+
+    </div>
+</div>
+<div class="main">
+    <div class="wrap">
+       <h2 class="big-title">
+           免费发布房源
+       </h2>
+        <div class="main1">
+            <p class="type">类别和身份</p>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">出租方式：</span>
+            </span>
+                </div>
+                <ul class="type-btn">
+                    <li class="type-btn1" id="a">
+                        <i class="circle">
+                            <i class="sure-btn"></i>
+                        </i>
+                        <label>整套出租</label>
+                    </li>
+                    <li class="type-btn1" id="b">
+                        <i class="circle">
+                            <i class=""></i>
+                        </i>
+                        <label>单间出租</label>
+                    </li>
+                    <li class="type-btn1" id="c">
+                        <i class="circle">
+                            <i class=""></i>
+                        </i>
+                        <label>床位出租</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">身份：</span>
+            </span>
+                </div>
+                <ul class="type-btn">
+                    <li class="type-btn-1" id="d">
+                        <i class="circle-1">
+                            <i class="sure-btn"></i>
+                        </i>
+                        <label>个人</label>
+                    </li>
+                    <li class="type-btn-1" id="e">
+                        <i class="circle-1">
+                            <i class=""></i>
+                        </i>
+                        <label>经纪人</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main2">
+            <p class="type">基础信息</p>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">小区名称：</span>
+            </span>
+                </div>
+                <div class="type-btn">
+                    <input type="text" id="villageName" name="villageName" value="" placeholder="请输入小区名称" class="type-btn-input"/>
+                </div>
+            </div>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">房屋户型：</span>
+            </span>
+                </div>
+                <ul class="type-btn">
+                    <li class="type-btn11">
+                        <input type="text" id="shi" name="shi" value="" class="type-btn-input2"/>
+                        <span class="type-btn-font">室</span>
+                    </li>
+                    <li class="type-btn11">
+                        <input type="text" id="ting" name="ting" value="" class="type-btn-input2"/>
+                        <span class="type-btn-font">厅</span>
+                    </li>
+                    <li class="type-btn11">
+                        <input type="text" id="wei" name="wei" value="" class="type-btn-input2"/>
+                        <span class="type-btn-font">卫</span>
+                    </li>
+                    <li class="type-btn11">
+                        <input type="text" id="area" name="area" value="" class="type-btn-input2"/>
+                        <span class="type-btn-font">㎡</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">楼层：</span>
+            </span>
+                </div>
+                <ul class="type-btn">
+                    <li class="type-btn11">
+                        <span class="type-btn-font type-btn-font1">第</span>
+                        <input type="text" id="floor" name="floor" value="" class="type-btn-input3"/>
+                        <span class="type-btn-font ">层</span>
+                    </li>
+                    <li class="type-btn11">
+                        <span class="type-btn-font type-btn-font1">共</span>
+                        <input type="text" id="countFloor" name="countFloor" value="" class="type-btn-input3"/>
+                        <span class="type-btn-font ">层</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">朝向装修：</span>
+            </span>
+                </div>
+                <ul class="type-btn">
+                    <li class="type-btn3" id="direction">
+                        <span class="type-btn-font1 type-btn-font2">南</span>
+                        <i class="btn-sangle"></i>
+                    </li>
+                    <div class="fangxiang">
+                        <p>东</p>
+                        <p>西</p>
+                        <p>北</p>
+                    </div>
+                    <li class="type-btn4" id="hlevel">
+                        <span class="type-btn-font1 type-btn-font2">精装修</span>
+                        <i class="btn-sangle"></i>
+                    </li>
+                    <div class="zhuangxiu">
+                        <p>精装修</p>
+                        <p>简装修</p>
+                        <p>毛培</p>
+                    </div>
+                </ul>
+            </div>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">租金：</span>
+            </span>
+                </div>
+                <ul class="type-btn">
+                    <li class="type-btn5">
+                        <span class="type-btn-font1 type-btn-font2">面议</span>
+                        <input type="text" id="price" name="price" value="" class="type-btn-input6"/>
+                        <span class="type-btn-font">元/月</span>
+                    </li>
+                    <li class="type-btn5" id="paymethod">
+                        <span class="type-btn-font1 type-btn-font2">押一付三</span>
+                        <i class="btn-sangle"></i>
+                    </li>
+                    <div class="rent-style">
+                        <p>押一付三</p>
+                        <p>押一付二</p>
+                        <p>押一付一</p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main3">
+            <p class="type">详细信息</p>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">标题：</span>
+            </span>
+                </div>
+                <div class="type-btn">
+                    <input type="text" id="tittle" name="tittle" value="" placeholder="8至30个字，不允许特殊字符" class="detail-btn-input"/>
+                </div>
+            </div>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">房屋配置：</span>
+            </span>
+                </div>
+                <ul class="type-btn" id="furniture">
+                    <li class="peizhi"><span>床</span></li>
+                    <li class="peizhi"><span>衣柜</span></li>
+                    <li class="peizhi"><span>沙发</span></li>
+                    <li class="peizhi"><span>书桌</span></li>
+                    <li class="peizhi"><span>电视</span></li>
+                    <li class="peizhi"><span>冰箱</span></li>
+                    <li class="peizhi"><span>微波炉</span></li>
+                    <li class="peizhi"><span>电磁炉</span></li>
+                    <li class="peizhi peizhi1"><span>洗衣机</span></li>
+                    <li class="peizhi peizhi1"><span>空调</span></li>
+                    <li class="peizhi peizhi1"><span>热水器</span></li>
+                    <li class="peizhi peizhi1"><span>宽带</span></li>
+                    <li class="peizhi peizhi1"><span>宽带</span></li>
+                </ul>
+            </div>
+            <div class="type1  type2">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">特色：</span>
+            </span>
+                </div>
+                <div class="type-btn">
+                    <input type="text" id="features" name="features" value="" placeholder="请输入4个关键词，不同关键词中间用空格隔开" class="detail-btn-input"/>
+                </div>
+            </div>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">地址：</span>
+            </span>
+                </div>
+                <div class="type-btn">
+                    <input type="text" id="address" name="address" value="" placeholder="请正确输入地址" class="detail-btn-input"/>
+                </div>
+            </div>
+            <div id="dv" class="send-picture">
+                <input type="file" name="file" id="file1" class="shangchuan">
+                <label class="s-picture">上传图片</label>
+            </div>
+            <div id="box"></div>
+            <p class="remember">只能上传房屋图片，不能包含有文字、数字、网址、名片等，堆堆上传24张，每张最大10M</p>
+        </div>
+        <div class="main4">
+            <p class="type">其他信息</p>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">联系人：</span>
+            </span>
+                </div>
+                <div class="type-btn">
+                    <input type="text" id="linkman" name="linkman" value="" placeholder="请填写联系人" class="mes-btn-input"/>
+                </div>
+            </div>
+            <div class="type1">
+                <div class="type1-l">
+                <span class="type1-color">*
+            <span class="type1-font">联系电话：</span>
+            </span>
+                </div>
+                <div class="type-btn">
+                    <input type="text" id="linkPhone" name="linkPhone" value="" placeholder="请正确填写号码" class="hot-btn-input"/>
+                </div>
+            </div>
+            <p class="publish">
+                <input type="button" class="publish-btn" value="发布" onclick="AddHouses();">
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class="finish">
+    <p class="finish-del"><a href="###" >×</a></p>
+    <p class="finish-font">
+        <i class="green-huan"></i>
+        <span class="finish-font1">房源发布成功</span>
+    </p>
+    <p class="last">
+        <a href="###" class=""><span class="last-col">返回</span></a>
+        <a href="###" class="ad">继续发布>></a>
+    </p>
+
+</div>
+<div class="footer">
+    <div class="wrap">
+        <ul class="footer-fl f-clear">
+            <li>友情链接：</li>
+            <li><a href="#" target="_blank" class="footer-font">武汉租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">厨房电器品牌</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房展汇</a></li>
+            <li><a href="#" target="_blank" class="footer-font">36搜房网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">无锡二手车</a></li>
+            <li><a href="#" target="_blank" class="footer-font">合肥房产网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产论坛</a></li>
+            <li><a href="#" target="_blank" class="footer-font">租房问答</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州房价</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">密封胶</a></li>
+        </ul>
+        <ul class="footer-fl1 f-clear">
+            <li><a href="#" target="_blank" class="footer-font ">南山写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">罗湖写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">上海写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">广州写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">北京办公室出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">深圳写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产季</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+        </ul>
+        <p class="xian-"></p>
+        <div class="footer-b">
+            <a href="#" target="_blank" class="footer-b1">北京宜居房产经纪有限公司</a>
+            | 网络经营许可证 京ICP备11024601号-12
+            <p class="footer-bottom">
+                © Copyright© 2010-2016 宜居yiju.com版权所有
+            </p>
+
+        </div>
+        <div class="second">
+            <a href="#" target="_blank" class="second-picture"></a>
+            <p class="second-font">微信扫一扫 马上租房</p>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script src="js/ajaxfileupload.js"></script>
+<script type="text/javascript" src="js/发布房源.js"></script>
+</body>
+</html>

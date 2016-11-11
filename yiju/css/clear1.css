@@ -1,0 +1,46 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+em, i {
+    font-style: normal;
+}
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a, u, s {
+    text-decoration: none;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #666;
+    line-height: 1.5;
+}
+
+a {
+    color: #666;
+}
+
+.f-clear:before, .f-clear:after {
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}

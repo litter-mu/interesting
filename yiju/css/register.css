@@ -1,0 +1,284 @@
+.banner {
+    width: 100%;
+    height: 650px;
+}
+
+.bg {
+    background: url("../img/bg.jpg") no-repeat center center;
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.logo1 {
+    display: inline-block;
+    height: 37px;
+    width: 100px;
+    background: url("../img/logo.png") no-repeat;
+}
+
+.logo2 {
+    width: 50px;
+    background: url("../img/yiju.png") no-repeat;
+}
+
+.logo1 {
+    margin-top: 45px;
+}
+
+.xian2 {
+    width: 1px;
+    height: 50px;
+    background-color: #BBBBBB;
+    display: inline-block;
+    vertical-align: -10px;
+}
+
+.welcome2 {
+    font-size: 23px;
+    color: #555555;
+    font-family: 微软雅黑;
+    margin-left: 16px;
+    vertical-align: 9px;
+    /*display: none;*/
+}
+
+.register-box {
+    width: 513px;
+    height: 465px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 14px auto;
+}
+
+.wrap-box {
+    width: 372px;
+    margin: 0 auto;
+}
+
+.login-title {
+    line-height: 60px;
+    font-size: 20px;
+    color: #333333;
+    font-weight: 600;
+    font-family: 微软雅黑;
+    text-align: center;
+}
+
+.name {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.name1 {
+    margin-bottom: 12px;
+}
+
+.name-l {
+    line-height: 34px;
+    width: 96px;
+    text-align: right;
+    display: inline-block;
+}
+
+.star-color {
+    color: #EF8654;
+}
+
+.name-font {
+    font-size: 14px;
+    color: #555555;
+    font-family: 微软雅黑;
+}
+
+.name-r {
+    width: 265px;
+    float: right;
+    border: 1px solid #D0D0D0;
+    height: 38px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.r-box {
+    width: 214px;
+    border: 0;
+    margin-left: 4px;
+}
+
+.people {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../img/spirte.png") no-repeat 0 -306px;
+    margin-left: 12px;
+    vertical-align: -5px;
+}
+
+.secret {
+    background: url("../img/spirte.png") no-repeat -25px -306px;
+}
+
+.r-box2 {
+    width: 106px;
+    height: 34px;
+    line-height: 34px;
+    border: 0;
+}
+
+.r-box22 {
+    width: 110px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #D0D0D0;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.name-r2 {
+    border: 0;
+}
+
+.try {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    background-color: #B0B0B0;
+}
+
+.try-font {
+    line-height: 36px;
+    display: inline-block;
+    color: #646464;
+}
+
+.rule-box {
+    margin-left: 106px;
+    margin-right: 6px;
+    vertical-align: -2px;
+}
+
+.rule-font {
+    color: #87B867;
+}
+
+.rule-r {
+    float: right;
+}
+
+.login1 {
+    width: 266px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #70AD46;
+
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 3px;
+    margin-left: 106px;
+}
+
+.login1-font {
+    color: #fff;
+}
+
+.submit {
+    border: 0;
+}
+
+.port ul li {
+    float: left;
+}
+
+.mail {
+    background: url("../img/spirte.png") no-repeat -55px -306px;
+}
+
+.phone {
+    background: url("../img/spirte.png") no-repeat -85px -306px;
+}
+
+/*弹出界面*/
+
+
+.body{
+    background-color: #0B1013;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: none;
+}
+.finish {
+    display: none;
+    width: 300px;
+    height: 180px;
+    background-color: #fff;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-top: -62px;
+    margin-left: -149px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 999;
+}
+
+.finish-del {
+    height: 43px;
+    line-height: 43px;
+    text-align: right;
+    font-size: 18px;
+    color: #D2D2D2;
+}
+
+.finish-font {
+    height: 40px;
+    line-height: 40px;
+}
+
+.green-huan {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background: url("../img/spirte.png") no-repeat 0 -384px;
+    margin-left: 56px;
+    margin-top: 10px;
+    vertical-align: -6px;
+
+}
+
+.finish-font1 {
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 20px;
+    color: #333333;
+    font-family: 微软雅黑;
+}
+
+.last {
+    height: 24px;
+    line-height: 24px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+}
+
+.dl {
+    margin-left: 4px;
+}

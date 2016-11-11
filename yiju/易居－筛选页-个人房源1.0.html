@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>易居－筛选页1.0</title>
+    <link rel="stylesheet" href="css/clear.css ">
+    <link rel="stylesheet" href="css/footer.css ">
+    <link rel="stylesheet" href="css/banner2.css ">
+    <style type="text/css">
+        .main{
+            height: 1460px;
+        }
+        .wrap{
+            width: 1150px;
+            margin: 0 auto;
+        }
+        .nav{
+            height: 158px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .nav1 li{
+            margin-top: 12px;
+            float: left;
+            font-size: 14px;
+            font-family: 微软雅黑;
+        }
+        .nav1{
+            float: left;
+            width: 1150px;
+        }
+        .areas{
+            font-size: 14px;
+            color: #666;
+            margin-left: 20px;
+        }
+        .area{
+            color: #333;
+            margin-left: 16px;
+        }
+        .current{
+            color: #75A749;
+        }
+        .area1{
+            width: 92px;
+            height: 20px;
+            line-height: 20px;
+            text-indent: 8px;
+            border: 1px solid #CCCCCC;
+        }
+        .under-sangle{
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border-top:5px solid #A6A6A6;
+            border-left:4px solid rgba(0,0,0,0);
+            border-right:4px solid rgba(0,0,0,0);
+            margin-right: 9px;
+            float: right;
+            margin-top: 8px;
+        }
+        .area2{
+            margin-right: 5px;
+            vertical-align: -1px;
+        }
+        .connet{
+            height: 1260px;
+        }
+        .hot{
+            height: 38px;
+            width: 1150px;
+            line-height: 38px;
+            border-top:1px solid #CCCCCC ;
+            border-bottom:1px solid #CCCCCC ;
+            background-color: #EEEEEE;
+            font-size: 16px;
+            color: #333333;
+            font-family: 微软雅黑;
+            margin-top: 20px;
+        }
+        .all{
+            width: 80px;
+            height: 38px;
+            display: inline-block;
+            text-align: center;
+        }
+        .all1{
+            width: 105px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+        }
+        .current1{
+            color: #fff;
+            background-color: #75A749;
+        }
+        .fr{
+            display: inline-block;
+            float: right;
+        }
+        .fr-font{
+            color:#75A749 ;
+        }
+        .fr-font1{
+            margin-right: 34px;
+        }
+        .fr-font2{
+            margin-right: 20px;
+        }
+
+        .top-sangle{
+            border-bottom:5px solid #999999;
+            border-right:4px solid rgba(0,0,0,0);
+            border-left:4px solid rgba(0,0,0,0);
+            display: inline-block;
+            vertical-align: 6px;
+        }
+        .bottom-sangle{
+            border-top:5px solid #999999;
+            border-right:4px solid rgba(0,0,0,0);
+            border-left:4px solid rgba(0,0,0,0);
+            display: inline-block;
+            margin-left: -13px;
+            /*vertical-align: -2px;*/
+        }
+        .wrap-s{
+            width: 1077px;
+            margin: 0 auto;
+        }
+        .list3{
+            height: 220px;
+            /*line-height: 220px;*/
+            border-bottom: 1px solid #E0E0E0;
+            position: relative;
+        }
+        .list3-img{
+            /*padding-top: 30px;*/
+            position: absolute;
+            left:0;
+            top:30px;
+
+        }
+        .list3-text{
+            margin-left: 242px;
+            padding-top: 30px;
+            font-size: 14px;
+        }
+        .people{
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            background: url("img/spirte.png") no-repeat 0 -114px;
+            vertical-align: -4px;
+        }
+        .cheng{
+            background: url("img/spirte.png") no-repeat -35px -114px;
+            vertical-align: -4px;
+        }
+        .msg{
+            font-size: 18px;
+            font-weight: 600;
+            color:#333333;
+            font-family: 微软雅黑;
+        }
+
+        .msg1{
+            margin-top: 18px;
+        }
+        .map{
+            width: 14px;
+            height: 18px;
+            display: inline-block;
+            margin-top: 10px;
+            background: url("img/spirte.png") no-repeat -67px -114px;
+            vertical-align: -3px;
+            margin-right: 4px;
+        }
+        .msg2{
+            width: 64px;
+            height: 22px;
+            line-height: 22px;
+            border: 1px solid #FFA422;
+            border-radius: 2px;
+            color: #FFA422;
+            text-align: center;
+            display: inline-block;
+            margin-top: 14px;
+        }
+        .msg3{
+            border: 1px solid #75A749;
+            color: #75A749;
+        }
+        .msg-del{
+            float: right;
+            width: 64px;
+            height: 22px;
+            line-height: 22px;
+            font-size: 12px;
+            border: 1px solid #CCCCCC;
+            border-radius: 2px;
+            text-align: center;
+            margin-top: -98px;
+        }
+        .del-{
+            font-size: 18px;
+            display: inline-block;
+            vertical-align: -1px;
+        }
+        .money{
+            font-size: 24px;
+            color: #EB5F00;
+            float: right;
+            margin-top: -50px;
+        }
+        .month{
+            font-size: 14px;
+        }
+        .time{
+            float: right;
+        }
+        .style{
+            font-size: 18px;
+            color: #FFA422;
+        }
+        .msg-color{
+            border: 1px solid #88B9B9;
+            color: #88B9B9;
+        }
+        .msg-color2{
+            border: 1px solid #DE958F;
+            color: #DE958F;
+        }
+        .wrap-s ul{
+            width: 330px;
+            margin:40px  auto ;
+        }
+        .wrap-s ul li{
+            float: left;
+            text-align: center;
+        }
+        .page{
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            display: inline-block;
+            border: 1px solid #CCCCCC;
+            margin-left: 8px;
+        }
+        .current2{
+            background-color: #F5F5F5;
+        }
+        .page1{
+            width: 42px;
+        }
+        .page2{
+            width: 56px;
+        }
+        .point{
+            margin-left: 9px;
+            /*vertical-align: -6px;*/
+        }
+
+    </style>
+</head>
+<body>
+<div class="banner">
+    <div class="wrap">
+        <a href="#" target="_blank" class="logo"></a>
+        <div class="search-box">
+            <span class="address">郑州</span>
+            <a href="#" target="_blank" class="addresses"></a>
+            <i class="xian">|</i>
+            <input type="text" class="search-content" placeholder="请输入小区名称/区域/厅室" value=""/>
+            <div class="btn">
+                <i class="button"></i>
+                <a href="#" class="search-font">搜房源</a>
+            </div>
+        </div>
+        <div class="set">
+            <a href="#">登录</a>
+            <i class="xiann">|</i>
+            <a href="#">注册</a>
+        </div>
+
+    </div>
+</div>
+<div class="main">
+    <div class="wrap">
+        <div class="nav">
+            <ul class="nav1">
+                <li class="areas">区域:</li>
+                <li><a href="#" target="_blank" class="area current">全部</a></li>
+                <li><a href="#" target="_blank" class="area">金水</a></li>
+                <li><a href="#" target="_blank" class="area">中牟</a></li>
+                <li><a href="#" target="_blank" class="area">惠济</a></li>
+                <li><a href="#" target="_blank" class="area">经济开发区</a></li>
+                <li><a href="#" target="_blank" class="area">周边县市</a></li>
+                <li><a href="#" target="_blank" class="area">高新</a></li>
+                <li><a href="#" target="_blank" class="area">郑东</a></li>
+                <li><a href="#" target="_blank" class="area">二七</a></li>
+                <li><a href="#" target="_blank" class="area">中原</a></li>
+                <li><a href="#" target="_blank" class="area">管城</a></li>
+            </ul>
+            <ul class="nav1">
+                <li class="areas">租金:</li>
+                <li><a href="#" target="_blank" class="area current">全部</a></li>
+                <li><a href="#" target="_blank" class="area">500以下</a></li>
+                <li><a href="#" target="_blank" class="area">500-800元</a></li>
+                <li><a href="#" target="_blank" class="area">800-1000元</a></li>
+                <li><a href="#" target="_blank" class="area">1000-1500元</a></li>
+                <li><a href="#" target="_blank" class="area">1500-2000元</a></li>
+                <li><a href="#" target="_blank" class="area">2000-3000元</a></li>
+                <li><a href="#" target="_blank" class="area">3000-5000元</a></li>
+                <li><a href="#" target="_blank" class="area">5000以上</a></li>
+            </ul>
+            <ul class="nav1">
+                <li class="areas">房型:</li>
+                <li><a href="#" target="_blank" class="area current">全部</a></li>
+                <li><a href="#" target="_blank" class="area">一室</a></li>
+                <li><a href="#" target="_blank" class="area">二室</a></li>
+                <li><a href="#" target="_blank" class="area">三室</a></li>
+                <li><a href="#" target="_blank" class="area">四室</a></li>
+                <li><a href="#" target="_blank" class="area">五室及以上</a></li>
+            </ul>
+            <ul class="nav1">
+                <li class="areas">筛选:</li>
+                <li class="area area1">房屋类型<i class="under-sangle"></i></li>
+                <li class="area area1">装修<i class="under-sangle"></i></li>
+                <li class="area"><input type="checkbox" name="[]" value="" class="area2">地铁房</li>
+                <li class="area"><input type="checkbox" name="[]" value="" class="area2">阳台</li>
+            </ul>
+
+        </div>
+        <div class="connet">
+            <div class="hot">
+                <span class="all">全部</span>
+                <span class="all1">诚信房源</span>
+                <span class="all1 current1">个人房源</span>
+                <span class="all1">经纪人</span>
+                <div class="fr">
+                <span class="fr-font fr-font1">默认</span>
+                    <span class="fr-font1">最新</span>
+                    <span class="fr-font2">租金
+                        <a href="#" target="_blank" class="top-sangle"></a>
+                        <a href="#" target="_blank" class="bottom-sangle"></a>
+
+                    </span>
+                </div>
+                <div class="wrap-s">
+                    <div class="list3">
+                        <div class="list3-img">
+                            <a href="#">
+                                <img src="img/picture1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="list3-text">
+                            <h2>
+                                <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                                <span class="style">（个人）</span>
+                                <i class="people cheng"></i>
+                            </h2>
+                            <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                            <p class="msg-address">
+                                <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                            </p>
+                            <div class="msg2">精装修</div>
+                            <div class="msg2 msg3">地铁口</div>
+                            <div class="money">2800<span class="month">/月</span></div>
+                            <p class="time">今天</p>
+                        </div>
+
+                    </div>
+                    <div class="list3">
+                        <div class="list3-img">
+                            <a href="#">
+                                <img src="img/picture2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="list3-text">
+                            <h2>
+                                <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                                <span class="style">（个人）</span>
+                            </h2>
+                            <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                            <p class="msg-address">
+                                <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                            </p>
+                            <div class="msg2 msg-color">家电齐全</div>
+                            <div class="msg2 msg3 msg-color2">押一付一</div>
+                            <div class="money">2800<span class="month">/月</span></div>
+                            <p class="time">2016.6.20</p>
+                        </div>
+
+                    </div>
+                    <div class="list3">
+                        <div class="list3-img">
+                            <a href="#">
+                                <img src="img/picture3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="list3-text">
+                            <h2>
+                                <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                                <span class="style">（个人）</span>
+                                <i class="people cheng"></i>
+                            </h2>
+                            <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                            <p class="msg-address">
+                                <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                            </p>
+                            <div class="msg2">精装修</div>
+                            <div class="msg2 msg3 msg-color2">押一付一</div>
+                            <div class="msg2 msg3">地铁口</div>
+                            <div class="money">2800<span class="month">/月</span></div>
+                            <p class="time">2016.6.20</p>
+                        </div>
+
+                    </div>
+                    <div class="list3">
+                        <div class="list3-img">
+                            <a href="#">
+                                <img src="img/picture4.png" alt="">
+                            </a>
+                        </div>
+                        <div class="list3-text">
+                            <h2>
+                                <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                                <span class="style">（个人）</span>
+                            </h2>
+                            <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                            <p class="msg-address">
+                                <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                            </p>
+                            <div class="msg2 msg3">地铁口</div>
+                            <div class="msg2 msg-color">家电齐全</div>
+                            <div class="money">2800<span class="month">/月</span></div>
+                            <p class="time">2016.6.20</p>
+                        </div>
+
+                    </div>
+                    <div class="list3">
+                        <div class="list3-img">
+                            <a href="#">
+                                <img src="img/picture5.png" alt="">
+                            </a>
+                        </div>
+                        <div class="list3-text">
+                            <h2>
+                                <a href="#" target="_blank" class="msg">曼哈顿 地铁口 家电齐全 三室两厅</a>
+                                <span class="style">（个人）</span>
+                                <i class="people cheng"></i>
+                            </h2>
+                            <p class="msg1">3室2厅|合租|豪华装修|15/32层</p>
+                            <p class="msg-address">
+                                <a href="#" target="_blank" class="map"></a>曼哈顿 [金水-燕庄 金水路未来路交汇处]
+                            </p>
+                            <div class="money">2800<span class="month">/月</span></div>
+                            <p class="time">2016.6.20</p>
+                        </div>
+
+                    </div>
+                    <ul>
+                        <li><a href="#" target="_blank" class="page current2">1</a></li>
+                        <li><a href="#" target="_blank" class="page">2</a></li>
+                        <li><a href="#" target="_blank" class="page">3</a></li>
+                        <li><a href="#" target="_blank" class="page">4</a></li>
+                        <li><a href="#" target="_blank" class="page">5</a></li>
+                        <li><a href="#" target="_blank" class="point">...</a></li>
+                        <li><a href="#" target="_blank" class="page page1">100</a></li>
+                        <li><a href="#" target="_blank" class="page page2">下一页</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="wrap">
+        <ul class="footer-fl f-clear">
+            <li>友情链接：</li>
+            <li><a href="#" target="_blank" class="footer-font">武汉租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">厨房电器品牌</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房展汇</a></li>
+            <li><a href="#" target="_blank" class="footer-font">36搜房网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">无锡二手车</a></li>
+            <li><a href="#" target="_blank" class="footer-font">合肥房产网</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产论坛</a></li>
+            <li><a href="#" target="_blank" class="footer-font">租房问答</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州房价</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">郑州租房</a></li>
+            <li><a href="#" target="_blank" class="footer-font">密封胶</a></li>
+        </ul>
+        <ul class="footer-fl1 f-clear">
+            <li><a href="#" target="_blank" class="footer-font ">南山写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">罗湖写字楼</a></li>
+            <li><a href="#" target="_blank" class="footer-font">上海写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">广州写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">北京办公室出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">深圳写字楼出租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">房产季</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+            <li><a href="#" target="_blank" class="footer-font">好租</a></li>
+        </ul>
+        <p class="xian-"></p>
+        <div class="footer-b">
+            <a href="#" target="_blank" class="footer-b1">北京宜居房产经纪有限公司</a>
+            | 网络经营许可证 京ICP备11024601号-12
+            <p class="footer-bottom">
+                © Copyright© 2010-2016 宜居yiju.com版权所有
+            </p>
+        </div>
+        <div class="second">
+            <a href="#" target="_blank" class="second-picture"></a>
+            <p class="second-font">微信扫一扫 马上租房</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
